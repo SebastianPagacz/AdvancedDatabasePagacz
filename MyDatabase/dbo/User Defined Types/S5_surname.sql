@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[S5_surname]
+    FROM NVARCHAR (100) NOT NULL;
+

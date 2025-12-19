@@ -13,7 +13,7 @@
     </RootPath>
     <RootNamespace>MyDatabase</RootNamespace>
     <AssemblyName>MyDatabase</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,6 +22,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -56,5 +58,72 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="lab5\" />
+    <Folder Include="lab5\Tables\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="SalesLT\" />
+    <Folder Include="SalesLT\Tables\" />
+    <Folder Include="234595\" />
+    <Folder Include="234595\Tables\" />
+    <Folder Include="Student_5\" />
+    <Folder Include="Student_5\Tables\" />
+    <Folder Include="Student_5\Views\" />
+    <Folder Include="SalesLT\Views\" />
+    <Folder Include="Student_5\Functions\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\User Defined Types\" />
+    <Folder Include="Security\" />
+    <Folder Include="SalesLT\XMLSchemaCollections\" />
+    <Folder Include="dbo\XMLSchemaCollections\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="lab5\Tables\Pracownicy.sql" />
+    <Build Include="lab5\Tables\Sprzedaz2025.sql" />
+    <Build Include="dbo\Tables\ErrorLog.sql" />
+    <Build Include="dbo\Tables\BuildVersion.sql" />
+    <Build Include="SalesLT\Tables\Address.sql" />
+    <Build Include="234595\Tables\Customer.sql" />
+    <Build Include="234595\Tables\CustomerAddress.sql" />
+    <Build Include="SalesLT\Tables\Product.sql" />
+    <Build Include="SalesLT\Tables\ProductCategory.sql" />
+    <Build Include="SalesLT\Tables\ProductDescription.sql" />
+    <Build Include="SalesLT\Tables\ProductModel.sql" />
+    <Build Include="SalesLT\Tables\ProductModelProductDescription.sql" />
+    <Build Include="SalesLT\Tables\SalesOrderDetail.sql" />
+    <Build Include="SalesLT\Tables\SalesOrderHeader.sql" />
+    <Build Include="dbo\Tables\ProductsCategories234595.sql" />
+    <Build Include="Student_5\Tables\ProduktyS.sql" />
+    <Build Include="dbo\Tables\CustomerHistory.sql" />
+    <Build Include="SalesLT\Tables\ProductAttribute.sql" />
+    <Build Include="dbo\Tables\TopProducts.sql" />
+    <Build Include="Student_5\Views\v_TheBestCustomer.sql" />
+    <Build Include="SalesLT\Views\vProductAndDescription.sql" />
+    <Build Include="SalesLT\Views\vProductModelCatalogDescription.sql" />
+    <Build Include="SalesLT\Views\vGetAllCategories.sql" />
+    <Build Include="Student_5\Functions\ufn_ProductsJsonCategory.sql" />
+    <Build Include="Student_5\Functions\ufn_IsPriceHigherThanCurrent.sql" />
+    <Build Include="dbo\Functions\ufnGetSalesOrderStatusText.sql" />
+    <Build Include="Student_5\Functions\ufn_CompareOriginal.sql" />
+    <Build Include="dbo\Functions\ufnGetAllCategories.sql" />
+    <Build Include="Student_5\Functions\ufn_CalcAdjustedPrices.sql" />
+    <Build Include="dbo\Functions\ufnGetCustomerInformation.sql" />
+    <Build Include="dbo\Stored Procedures\uspPrintError.sql" />
+    <Build Include="dbo\Stored Procedures\uspLogError.sql" />
+    <Build Include="dbo\User Defined Types\AccountNumber.sql" />
+    <Build Include="dbo\User Defined Types\Flag.sql" />
+    <Build Include="dbo\User Defined Types\NameStyle.sql" />
+    <Build Include="dbo\User Defined Types\Name.sql" />
+    <Build Include="dbo\User Defined Types\OrderNumber.sql" />
+    <Build Include="dbo\User Defined Types\Phone.sql" />
+    <Build Include="dbo\User Defined Types\S5_surname.sql" />
+    <Build Include="Security\234595.sql" />
+    <Build Include="Security\lab5.sql" />
+    <Build Include="Security\SalesLT.sql" />
+    <Build Include="Security\Student_5.sql" />
+    <Build Include="SalesLT\XMLSchemaCollections\ProductDescriptionSchemaCollection.sql" />
+    <Build Include="dbo\XMLSchemaCollections\ProductSchema.sql" />
+    <Build Include="ExtendedProperties.sql" />
   </ItemGroup>
 </Project>

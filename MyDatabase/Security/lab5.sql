@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [lab5]
+    AUTHORIZATION [dbo];
+
